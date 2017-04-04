@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="com.make.inte"
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-inte"
     version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>Cordova Intent</name>
 
@@ -17,7 +17,7 @@
 
     <keywords>cordova,intent</keywords>
 
-    <js-module name="cordova-plugin-inte" src="www/cordova-plugin-inte.js">
+    <js-module name="IntePlugin" src="www/inte.js">
         <clobbers target="inte" />
     </js-module>
 
