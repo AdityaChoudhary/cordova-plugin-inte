@@ -23,15 +23,15 @@
 
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="cordova-plugin-inte">
-                <param name="android-package" value="com.make.inte.cordova-plugin-inte" />
+            <feature name="IntePlugin">
+                <param name="android-package" value="com.make.inte.IntePlugin" />
             </feature>
         </config-file>
         <config-file parent="/manifest/application" target="AndroidManifest.xml">
             <activity android:name="com.make.inte.NewActivity" android:label="New Activity" />
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml" />
-        <source-file src="data/android/cordova-plugin-inte.java" target-dir="src/com/make/inte/" />
+        <source-file src="data/android/IntePlugin.java" target-dir="src/com/make/inte/" />
         <source-file src="data/android/NewActivity.java" target-dir="src/com/make/inte/" />
         <source-file src="data/android/activity_new.xml" target-dir="res/layout" />
     </platform>
