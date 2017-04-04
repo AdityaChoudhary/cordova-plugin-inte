@@ -1,0 +1,32 @@
+{
+	"name": "cordova-plugin-inte",
+	"description": "Cordova Intent for use.",
+	"version": "1.0.0",
+	"homepage": "https://github.com/AdityaChoudhary/cordova-plugin-inte#readme",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:AdityaChoudhary/cordova-plugin-inte.git"
+	},
+	"bugs": {
+		"url": "https://github.com/AdityaChoudhary/cordova-plugin-inte/issues"
+	},
+	"cordova": {
+		"id": "cordova-plugin-inte",
+		"platforms": [
+			"ios"
+		]
+	},
+	"keywords": [
+		"ecosystem:cordova",
+		"ecosystem:phonegap",
+		"cordova-ios"
+	],
+	"engines": [
+		{
+			"name": "cordova",
+			"version": ">=3.0.0"
+		}
+	],
+	"author": "Aditya Choudhary",
+	"license": "MIT"
+}

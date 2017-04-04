@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="com.make.inte"
+    version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Cordova Intent</name>
+
+    <description>
+        Cordova Intent for use.
+    </description>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+    <repo>https://github.com/AdityaChoudhary/cordova-plugin-inte.git</repo>
+    <issue>https://github.com/AdityaChoudhary/cordova-plugin-inte/issues</issue>
+    <license>MIT</license>
+
+    <keywords>cordova,intent</keywords>
+
+    <js-module name="cordova-plugin-inte" src="www/cordova-plugin-inte.js">
+        <clobbers target="inte" />
+    </js-module>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="cordova-plugin-inte">
+                <param name="android-package" value="com.make.inte.cordova-plugin-inte" />
+            </feature>
+        </config-file>
+        <config-file parent="/manifest/application" target="AndroidManifest.xml">
+            <activity android:name="com.make.inte.NewActivity" android:label="New Activity" />
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="data/android/cordova-plugin-inte.java" target-dir="src/com/make/inte/" />
+        <source-file src="data/android/NewActivity.java" target-dir="src/com/make/inte/" />
+        <source-file src="data/android/activity_new.xml" target-dir="res/layout" />
+    </platform>
+</plugin>
